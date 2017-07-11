@@ -1,0 +1,55 @@
+.app{
+    min-height: 100%;
+    line-height: 1.4;
+    background-color: #EEE;
+        
+    display: flex;
+    flex-direction: column;
+}
+
+ul{
+    padding: 2rem;
+}
+
+li{
+    white-space: nowrap;
+}
+
+header,
+footer {
+    padding: 2rem;
+    color: white;
+    background: steelblue;
+    height: 5rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+aside{
+    padding: 2rem;
+    background-color: deepskyblue;
+    
+    order: 1;
+}
+
+section{
+    padding: 2rem;
+    background-color: #DDD;    
+}
+
+@media screen and (min-width: 64em){
+    main{
+        flex-direction: row;
+    }
+
+    section{
+        flex: 1 0 70%;
+    }
+
+    aside{
+        flex: 1 0 30%;
+    }
+}

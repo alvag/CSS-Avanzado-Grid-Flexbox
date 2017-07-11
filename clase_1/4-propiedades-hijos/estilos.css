@@ -1,0 +1,34 @@
+/*
+flex-grow
+flex-shrink
+flex-basis
+flex: grow | shrink | basis;
+align-self
+order
+*/
+
+.container{
+	display: flex;
+	width: 500px;
+	background: lime;
+	height: 400px;	
+}
+
+.item{
+	background: yellow;
+	/*flex: 1 1 auto;*/
+	flex: 5;
+	height: 40px;
+	/*transition: all .5s;*/
+
+}
+
+.item:nth-child(2){
+	order: -1;
+	/*align-self: flex-end;*/
+	
+}
+
+.item:nth-child(even){
+	background: pink;
+}

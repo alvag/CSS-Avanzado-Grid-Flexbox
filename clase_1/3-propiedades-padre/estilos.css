@@ -1,0 +1,50 @@
+/*
+Flexbox Container
+	display: flex | inline-flex;
+		Define una caja flexible de bloque o de linea
+
+	flex-direction: row | row-reverse | column | column-reverse;
+		Define el eje principal y el tranversal de la caja felxible
+			row		x - principal 		y - transversal
+			column	x - transversal		y - principal
+
+	flex-wrap: nowrap | wrap | wrap-reverse;
+		Determina la existencia o no de saltos de linea y su sentido		
+
+	justify-content: flex-start | flex-end | center | space-between | space-around;
+		Alineación de los hijos en el eje principal (espacio sobrante)
+	align-items: stretch | flex-start | flex-end | center | baseline;
+		Alineación de los hijos en el eje transversal (espacio sobrante) cuando NO
+		hay saltos de linea (flex-wrap: nowrap)
+	align-content: stretch | flex-start | flex-end | center | space-between | space-around;	
+		Alineación de los hijos en el eje transversal (espacio sobrante) cuando SI
+		hay saltos de linea (flex-wrap: wrap | wrap-reverse)
+
+
+*/
+
+.container{
+	/*padding: 1rem;*/
+	margin: auto;
+	width: 80vw;
+	height: 50vh;
+	border: medium solid #333;
+	background-color: steelblue;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: space-between;
+}
+
+.item{
+	border: thin solid #333;
+	font-size: 2rem;
+	background-color: deepskyblue;
+	width: 15%;
+	height: 20%;
+}
+
+.item:nth-child(9){font-size: 4rem;}
