@@ -1,0 +1,24 @@
+body{
+
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header,
+footer{
+    padding: 1rem;
+    background-color: steelblue;
+    color:white;
+    text-align: center;
+}
+
+main{
+    padding: 3rem 5%;
+    overflow-y: auto;
+    font-size: 1.5em;
+    background-color: #eee;
+}
