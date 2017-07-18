@@ -1,0 +1,77 @@
+/*
+.tablero{
+    width: 500px;
+    display: grid;
+    border: 1px solid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.cuadro{
+    height: calc(500px / 8);
+}
+
+.cuadro:nth-child(even):nth-child(-n + 8),
+.cuadro:nth-child(n+9):nth-child(odd):nth-child(-n + 16),
+.cuadro:nth-child(n+17):nth-child(even):nth-child(-n + 24),
+.cuadro:nth-child(n+25):nth-child(odd):nth-child(-n + 32){
+    background: #000;
+}
+*/
+
+:root{
+    --calendar-gap: 4px;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    background: linear-gradient(-45deg, hsl(330, 100%, 50%), hsl(30, 100%, 50%));
+}
+
+.calendar__week,
+.calendar__dates{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: var(--calendar-gap);
+}
+
+.calendar__week{
+    margin-bottom: var(--calendar-gap);
+}
+
+.calendar__date:first-child{
+    grid-column: 5;
+}
+
+.calendar{
+    width: 90%;
+    margin: auto;
+    max-width: 400px;
+}
+
+.calendar__header{
+    background: rgba(0, 0, 0, .3)
+}
+
+.calendar__month{
+    text-align: center;
+    line-height: 2;
+    color: #fff;
+    font-size: 1.2em;    
+}
+
+.calendar__day{
+    color: rgba(255, 255, 255, .5);
+    font-size: .8em;
+}
+
+.calendar__item{    
+    text-align: center;        
+    line-height: 2;
+}
+
+
+.calendar__date{
+    background: rgba(255, 255, 255, .2);
+    color: #fff;
+}

@@ -1,0 +1,42 @@
+.History {
+  max-width: 1200px;
+  margin: auto;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(13, minmax(1rem, 4rem));
+  grid-gap: 1vw;
+  grid-auto-flow: row dense;
+}
+
+.History-item {
+  border: medium solid #000;
+  padding: 1rem;
+  font-size: 2rem;
+  color: #FFF;
+  background-color: steelblue;
+}
+
+.c1xr1 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.c1xr2 {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.c2xr1 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.c2xr2 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.c3xr1 {
+  grid-column: span 3;
+  grid-row: span 1;
+}

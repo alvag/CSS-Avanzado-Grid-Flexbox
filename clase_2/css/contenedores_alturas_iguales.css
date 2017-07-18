@@ -1,0 +1,26 @@
+.title{
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: stretch; */
+    width: 80%;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: steelblue;
+}
+
+.col{
+    background-color: deepskyblue;
+    padding: 1rem;
+    flex-basis: 47.5%;
+    display: flex;    
+}
+
+.text{
+    background-color: #fff;
+    padding: 1rem;
+}

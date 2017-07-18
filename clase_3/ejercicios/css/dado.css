@@ -1,0 +1,134 @@
+.dado{
+    width: 120px;
+    height: 120px;
+    border: 1px solid #333;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 1em;
+}
+
+.punto{
+    width: 20px;
+    height: 20px;
+    background: #000;
+    border-radius: 50%;
+    align-self: center;
+    justify-self: center;
+}
+
+/*
+.uno .punto{
+    grid-area: 2 / 2;
+}
+
+.dos .punto:first-child{
+    grid-area: 1 / 3;
+}
+
+.dos .punto:last-child{
+    grid-area: 3;
+}
+
+.tres .punto:first-child{
+    grid-area: 1 / 3;
+}
+
+.tres .punto:nth-child(2){
+    grid-area: 2 / 2;
+}
+
+.tres .punto:last-child{
+    grid-area: 3;
+}
+
+.cuatro .punto:nth-child(2){
+    grid-area: 1 / 3;
+}
+
+.cuatro .punto:nth-child(3){
+    grid-area: 3;
+}
+
+.cuatro .punto:nth-child(4){
+    grid-area: 3 / 3;
+}
+
+.cinco .punto:nth-child(2){
+    grid-area: 1 / 3;
+}
+
+.cinco .punto:nth-child(3){
+    grid-area: 3;
+}
+
+.cinco .punto:nth-child(4){
+    grid-area: 3 / 3;
+}
+
+.cinco .punto:nth-child(5){
+    grid-area: 2 / 2;
+}
+
+.seis .punto:nth-child(2){
+    grid-area: 1 / 3;
+}
+
+.seis .punto:nth-child(3){
+    grid-area: 3;
+}
+
+.seis .punto:nth-child(4){
+    grid-area: 3 / 3;
+}
+
+.seis .punto:nth-child(5){
+    grid-area: 2;
+}
+
+.seis .punto:nth-child(6){
+    grid-area: 2 / 3;
+}
+*/
+
+.p1{
+    /* posicion por defecto, no necesita css*/
+}
+
+.p2{
+    grid-area: 1 / 2;
+}
+
+.p3{
+    grid-area: 1 / 3;
+}
+
+.p4{
+    grid-area: 2 / 1;
+}
+
+.p5{
+    grid-area: 2 / 2;
+}
+
+.p6{
+    grid-area: 2 / 3;
+}
+
+.p7{
+    grid-area: 3 / 1;
+}
+
+.p8{
+    grid-area: 3 / 2;
+}
+
+.p9{
+    grid-area: 3 / 3;
+}
+
+.dado-container{
+    display: flex;
+    flex-wrap: wrap;
+
+}

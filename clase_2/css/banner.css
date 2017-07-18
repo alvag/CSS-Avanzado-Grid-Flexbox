@@ -1,0 +1,70 @@
+.main-banner{
+    background: linear-gradient(to right, #25c9ff, #2279d7);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
+}
+
+.main-banner__content{
+    padding: 4em 1em;
+    text-align: center;
+    color: #fff;
+}
+
+.main-banner__presentation{
+    margin-bottom: 1em;
+}
+
+.main-banner__title{
+    font-size: 2.5em;
+}
+
+.main-banner__subtitle{
+    opacity: .7;
+}
+
+.button{
+    background: linear-gradient(to right, #e5544c, #de2a20);    
+    margin-bottom: 1em;
+    padding: 1em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    border-radius: .3em;
+}
+
+.button:hover{
+    text-decoration: none;
+    background: linear-gradient(to right, #d44c44, #b3231b);
+}
+
+.courses{
+    display: none;
+}
+
+@media screen and (min-width: 800px){
+    
+    .main-banner__content{
+        display: flex;
+        text-align: left;
+        padding: 0 1em;
+    }
+
+    .main-banner__first{
+        width: 50%;
+        padding: 3em 0;
+    }
+
+    .main-banner__second{
+        width: 50%;
+    }
+
+    .courses{
+        display: block;        
+        color: #fff;
+    }
+
+    .main-banner__img{
+        background:url(../img/laptop-EDteam.png) center / contain no-repeat;
+        height: 100%;
+    }
+
+}

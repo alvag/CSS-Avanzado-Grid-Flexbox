@@ -1,0 +1,116 @@
+.History {
+  max-width: 1200px;
+  margin: auto;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(13, minmax(1rem, 4rem));
+  grid-gap: 1vw;
+  grid-auto-flow: row dense;
+}
+
+.History-item {
+  border: medium solid #000;
+  padding: 1rem;
+  font-size: 2rem;
+  color: #FFF;
+  background-color: steelblue;
+}
+
+.History-item:first-of-type {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.History-item:nth-of-type(2) {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.History-item:nth-of-type(3) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.History-item:nth-of-type(4) {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+
+.History-item:nth-of-type(5),
+.History-item:nth-of-type(6),
+.History-item:nth-of-type(7) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.History-item:nth-of-type(8) {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.History-item:nth-of-type(9) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.History-item:nth-of-type(10) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.History-item:nth-of-type(11) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.History-item:nth-of-type(12) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.History-item:nth-of-type(13),
+.History-item:nth-of-type(14),
+.History-item:nth-of-type(15) {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+
+.History-item:nth-of-type(16) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.History-item:nth-of-type(17) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.History-item:nth-of-type(18) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.History-item:nth-of-type(19) {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.History-item:nth-of-type(20) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.History-item:nth-of-type(21) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.History-item:nth-of-type(22) {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.History-item:last-of-type {
+  grid-column: span 1;
+  grid-row: span 1;
+}
